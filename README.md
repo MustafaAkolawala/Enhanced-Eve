@@ -20,7 +20,7 @@ This project implements a multifunctional chatbot based on the Mistral 7B model,
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/llm-multifunctionality-chatbot.git
+    https://github.com/MustafaAkolawala/Enhanced-Eve.git
     ```
 
 2. Install the required Python libraries:
@@ -38,6 +38,11 @@ This project implements a multifunctional chatbot based on the Mistral 7B model,
     ```bash
     python app.py
     ```
+2. View the frontend:
+
+  ```bash
+  https://localhost8080
+  ```
 
 2. Follow the prompts or speak to the chatbot to interact with it.
 
