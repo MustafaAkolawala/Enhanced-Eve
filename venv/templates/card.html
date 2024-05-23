@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+<style>
+
+    
+      .container  {
+        box-sizing: border-box;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        --card-height: 50vh;
+        --card-width: calc(var(--card-height) / 1.5);
+       
+      }
+      .card {
+        width: var(--card-width);
+        height: var(--card-height);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 0 36px;
+        perspective: 2500px;
+        margin: 0 50px;
+      }
+      
+      .cover-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .wrapper {
+        transition: all 0.5s;
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+      }
+      
+      .card:hover .wrapper {
+        transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+        box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+      }
+      
+      .wrapper::before,
+      .wrapper::after {
+        content: "";
+        opacity: 0;
+        width: 100%;
+        height: 80px;
+        transition: all 0.5s;
+        position: absolute;
+        left: 0;
+      }
+      .wrapper::before {
+        top: 0;
+        height: 100%;
+        background-image: linear-gradient(
+          to top,
+          transparent 46%,
+          rgba(12, 13, 19, 0.5) 68%,
+          rgba(12, 13, 19) 97%
+        );
+      }
+      .wrapper::after {
+        bottom: 0;
+        opacity: 1;
+        background-image: linear-gradient(
+          to bottom,
+          transparent 46%,
+          rgba(12, 13, 19, 0.5) 68%,
+          rgba(12, 13, 19) 97%
+        );
+      }
+      
+      .card:hover .wrapper::before,
+      .wrapper::after {
+        opacity: 1;
+      }
+      
+      .card:hover .wrapper::after {
+        height: 20px;
+      }
+      .title {
+        width: 100%;
+        transition: transform 0.5s;
+      }
+      .card:hover .title {
+        transform: translate3d(0%, -50px, 100px);
+      }
+      
+      .character {
+        width: 100%;
+        opacity: 0;
+        transition: all 0.5s;
+        position: absolute;
+        z-index: -1;
+      }
+      
+      .card:hover .character {
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+      }
+      
+
+      @media screen and (min-width: 1200px) {
+        /* Styles for desktop devices */
+
+
+    }
+
+
+      @media screen and (max-width: 767px) {
+        /* Styles for mobile devices */
+        
+
+    }
+
+    
+
+
+
+
+</style>
+
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+
+        <div class="container">
+        <a href="#" alt="Mythrill" target="_blank">
+            <div class="card">
+              <div class="wrapper">
+                <img src="https://aurumrentalagency.com/wp-content/uploads/2024/05/2-1.png" class="cover-image" />
+              </div>
+              <img src="carbrandlogo/audiname.png" class="title" />
+              <img src="carbrandlogo/rs6.png" class="character"style="width: 620px;"/>
+            </div>
+          </a>
+          
+          <a href="https://www.mythrillfiction.com/force-mage" alt="Mythrill" target="_blank">
+            <div class="card">
+              <div class="wrapper">
+                <img src="https://ggayane.github.io/css-experiments/cards/force_mage-cover.jpg" class="cover-image" />
+              </div>
+              <img src="https://ggayane.github.io/css-experiments/cards/force_mage-title.png" class="title" />
+              <img src="https://ggayane.github.io/css-experiments/cards/force_mage-character.webp" class="character" />
+            </div>
+          </a>
+
+          
+            <a href="#" alt="Mythrill" target="_blank">
+                <div class="card">
+                  <div class="wrapper">
+                    <img src="https://aurumrentalagency.com/wp-content/uploads/2024/05/2-1.png" class="cover-image" />
+                  </div>
+                  <img src="https://aurumrentalagency.com/wp-content/uploads/2024/05/audiname-300x116.png" class="title" />
+                  <img src="https://aurumrentalagency.com/wp-content/uploads/2024/05/rs6audiii-removebg-preview-300x169.png" class="character"style="width: 620px;"/>
+                </div>
+              </a>
+          
+
+        </div>
+
+
+
+        <script src="" async defer></script>
+    </body>
+</html>
